@@ -9,7 +9,12 @@ return {
     end,
     ft = { "markdown" },
   },
-
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      inlay_hints = { enabled = false },
+    },
+  },
   -- git blame
   {
     "f-person/git-blame.nvim",
