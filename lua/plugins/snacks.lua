@@ -5,9 +5,8 @@ return {
   ---@type snacks.Config
   opts = {
     bigfile = { enabled = true },
-    dashboard = { enabled = true },
-    explorer = { enabled = true },
     indent = { enabled = true },
+    dashboard = { enabled = true},
     input = { enabled = true },
     notifier = {
       enabled = true,
@@ -31,7 +30,6 @@ return {
     { "<leader>/", function() Snacks.picker.grep() end, desc = "Grep" },
     { "<leader>:", function() Snacks.picker.command_history() end, desc = "Command History" },
     { "<leader>n", function() Snacks.picker.notifications() end, desc = "Notification History" },
-    { "<leader>e", function() Snacks.explorer() end, desc = "File Explorer" },
     -- find
     { "<leader>fb", function() Snacks.picker.buffers() end, desc = "Buffers" },
     { "<leader>fc", function() Snacks.picker.files({ cwd = vim.fn.stdpath("config") }) end, desc = "Find Config File" },
@@ -66,7 +64,6 @@ return {
     { "<leader>si", function() Snacks.picker.icons() end, desc = "Icons" },
     { "<leader>sj", function() Snacks.picker.jumps() end, desc = "Jumps" },
     { "<leader>sk", function() Snacks.picker.keymaps() end, desc = "Keymaps" },
-    { "<leader>sl", function() Snacks.picker.loclist() end, desc = "Location List" },
     { "<leader>sm", function() Snacks.picker.marks() end, desc = "Marks" },
     { "<leader>sM", function() Snacks.picker.man() end, desc = "Man Pages" },
     { "<leader>sp", function() Snacks.picker.lazy() end, desc = "Search for Plugin Spec" },
