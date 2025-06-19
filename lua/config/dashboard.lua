@@ -77,7 +77,8 @@ local buttons = {
         button("f", "󰈞  Find file", function() Snacks.picker.files() end),
         button("r", "󰊄  Recently opened files", function() Snacks.picker.recent() end),
         button("g", "󰈬  Grep", function() Snacks.picker.grep() end),
-        button("q", "x  Quit", "<cmd>q <CR>"),
+        button("e", "󰈢  File Explorer", "<cmd>Yazi<CR>"),
+        button("q", "󰩈  Quit", "<cmd>q <CR>"),
     },
     opts = {
         spacing = 1,
